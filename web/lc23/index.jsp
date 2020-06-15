@@ -23,6 +23,7 @@
     <%= new Date()%>
     <br>
     当前登陆用户<%=session.getAttribute("name")%>
+    <br>
     <%
         if(session.getAttribute("name")!=null){
             out.println("<a href=\"logout.jsp\">注销</a>");
