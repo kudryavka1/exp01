@@ -1,5 +1,6 @@
 <%@ page import="java.util.List" %>
-<%@ page import="java.util.Vector" %><%--
+<%@ page import="java.util.Vector" %>
+<%@ page import="java.util.Date" %><%--
   Created by IntelliJ IDEA.
   User: zh
   Date: 2020/5/28
@@ -19,6 +20,8 @@
 <body>
 
 <div align="center">
+    <%= new Date()%>
+    <br>
     当前登陆用户<%=session.getAttribute("name")%>
     <%
         if(session.getAttribute("name")!=null){
