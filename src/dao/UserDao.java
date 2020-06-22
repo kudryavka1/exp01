@@ -7,6 +7,8 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import util.JDBCUtils;
 
+import java.util.List;
+
 /**
  * 操作数据库中User表的类
  */
@@ -32,9 +34,30 @@ public class UserDao {
         }
     }
 
+    public boolean register (User loginUser){
+        String sql1 = "select * from user where username= ?";
+        String sql = "INSERT INTO user VALUES(null,?,?)";
+        List<User> list= template.query(sql1,new BeanPropertyRowMapper<User>(User.class),loginUser.getUsername());
+        if(list.isEmpty()){
+            template.update(sql,loginUser.getUsername(),loginUser.getPassword());
+            return true;
+        }else {
+
+            return false;
+        }
+
+    }
+
+/*
+    public static void main(String[] args) {
+        User user = new User();
+        user.setUsername("1233");
+        user.setPassword("123");
+        UserDao dao = new UserDao();
+        System.out.println(dao.register(user));
 
 
-
-
+    }
+*/
 
 }
