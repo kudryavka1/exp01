@@ -8,12 +8,12 @@ import java.util.Map;
 public class FoodDB {
     private static Map<String, Food> map = new LinkedHashMap<>();
     static {
-        map.put("1",new Food("1","Apple",5));
-        map.put("2",new Food("2","banana",10));
-        map.put("3",new Food("3","orange",8));
-        map.put("4",new Food("4","peach",15));
-        map.put("5",new Food("5","watermelon",20));
-        map.put("6",new Food("6","pear",10));
+        map.put("101",new Food("101","Apple",5));
+        map.put("102",new Food("102","banana",10));
+        map.put("103",new Food("103","orange",8));
+        map.put("104",new Food("104","peach",15));
+        map.put("105",new Food("105","watermelon",20));
+        map.put("106",new Food("106","pear",10));
 
     }
     public static Map<String,Food> getALL(){

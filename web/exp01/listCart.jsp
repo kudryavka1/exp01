@@ -41,8 +41,8 @@
         </tr>
     </c:forEach>
         <tr>
-
-            <td colspan="3">合计：</td>
+            <td colspan="3"><a href="/exp01/FoodServlet">点击继续购买商品</a></td>
+            <td colspan="1">合计：</td>
             <td colspan="2">${cart.price}</td>
         </tr>
 
