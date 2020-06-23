@@ -2,9 +2,9 @@ package domain;
 
 public class Food {
 
-    private int id;
+    private String id;
     private String foodname;
-    private int price;
+    private double price;
 
     @Override
     public String toString() {
@@ -18,17 +18,17 @@ public class Food {
     public Food() {
     }
 
-    public Food(int id, String foodname, int price) {
+    public Food(String id, String foodname, double price) {
         this.id = id;
         this.foodname = foodname;
         this.price = price;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -40,7 +40,7 @@ public class Food {
         this.foodname = foodname;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
