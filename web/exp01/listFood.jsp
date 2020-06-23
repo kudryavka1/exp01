@@ -13,6 +13,7 @@
 
 </head>
 <body>
+单前用户：<%=session.getAttribute("username")%><a href="/exp01/LogoutServlet">注销</a>
     <table border="1px">
         <tr>
             <td>食品编号</td>

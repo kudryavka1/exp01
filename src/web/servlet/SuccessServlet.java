@@ -10,6 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * 此页面不需要了！！！！！！
+ * 登陆成功后直接跳转到商城购买页面！！！！！
+ */
 @WebServlet("/successServlet")
 public class SuccessServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -18,7 +22,9 @@ public class SuccessServlet extends HttpServlet {
 
         if(user!=null) {
             response.setContentType("text/html;charset=utf-8");
-            response.getWriter().write("登陆成功，" + user.getUsername() + "欢迎您");
+//            response.getWriter().write("登陆成功，" + user.getUsername() + "欢迎您");
+            request.getRequestDispatcher("/exp01/listFood.jsp").forward(request,response);
+
         }
     }
 

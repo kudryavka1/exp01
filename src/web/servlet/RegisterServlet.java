@@ -25,7 +25,10 @@ public class RegisterServlet extends HttpServlet {
 
 
         UserDao dao = new UserDao();
-        dao.register(RgUser);
+        if(dao.register(RgUser)){
+            response.sendRedirect("/exp01/exp01/successRegister.html");
+        }
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
@@ -52,8 +53,10 @@ public class LoginServlet extends HttpServlet {
             req.getRequestDispatcher("/failServlet").forward(req,resp);
         }else {
             //登陆成功
-            req.setAttribute("user",user);//存储数据
-            req.getRequestDispatcher("/successServlet").forward(req,resp);//转发
+            HttpSession session = req.getSession();
+            session.setAttribute("username",user.getUsername());
+            //req.setAttribute("username",user.getUsername());//存储数据
+            req.getRequestDispatcher("/FoodServlet").forward(req,resp);//转发
         }
     }
 
