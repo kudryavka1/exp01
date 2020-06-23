@@ -18,6 +18,7 @@
             <td>食品编号</td>
             <td>食品名称</td>
             <td>食品价格</td>
+            <td>购买</td>
         </tr>
 
 
@@ -26,6 +27,7 @@
                 <td>${me.key}</td>
                 <td>${me.value.foodname}</td>
                 <td>${me.value.price}</td>
+                <td><a href="${pageContext.request.contextPath}/BuyServlet?foodid=${me.key}">购买</a></td>
             </tr>
 
 

@@ -1,6 +1,7 @@
 package service;
 
 import dao.FoodDao2;
+import domain.Cart;
 import domain.Food;
 
 import java.util.Map;
@@ -14,5 +15,9 @@ public class BusinessService {
 
     public Food findFood(String id){
         return foodDao2.find(id);
+    }
+    public void buyFood(String id, Cart cart){
+        Food food = foodDao2.find(id);
+        cart.addFood(food);
     }
 }
