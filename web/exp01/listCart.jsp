@@ -40,9 +40,9 @@
         </tr>
     </c:forEach>
         <tr>
-            <td colspan="2"><a href="#">清空购物车</a></td>
-            <td colspan="2">合计：</td>
-            <td>${cart.price}</td>
+
+            <td colspan="3">合计：</td>
+            <td colspan="2">${cart.price}</td>
         </tr>
 
 

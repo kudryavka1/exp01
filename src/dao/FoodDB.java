@@ -12,6 +12,8 @@ public class FoodDB {
         map.put("2",new Food("2","banana",10));
         map.put("3",new Food("3","orange",8));
         map.put("4",new Food("4","peach",15));
+        map.put("5",new Food("5","watermelon",20));
+        map.put("6",new Food("6","pear",10));
 
     }
     public static Map<String,Food> getALL(){
