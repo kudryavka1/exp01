@@ -15,6 +15,7 @@
 <body>
 <c:if test="${empty(cart.foodMap)}">
     <h1>你还没购买任何水果</h1>
+    <a href="/exp01/FoodServlet">点击进入购买页面</a>
 </c:if>
 
 
