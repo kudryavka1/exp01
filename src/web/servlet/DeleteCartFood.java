@@ -19,7 +19,7 @@ public class DeleteCartFood extends HttpServlet {
 
         BusinessService businessService = new BusinessService();
         businessService.deleteFood(id,cart);
-        request.getRequestDispatcher("/exp01/listCart.jsp").forward(request,response);
+        request.getRequestDispatcher(request.getContextPath()+"/listCart.jsp").forward(request,response);
 
     }
 

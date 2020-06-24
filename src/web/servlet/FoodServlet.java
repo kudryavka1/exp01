@@ -19,7 +19,7 @@ public class FoodServlet extends HttpServlet {
         HttpSession session = request.getSession();
         session.setAttribute("foods",foods);
 
-        request.getRequestDispatcher("/exp01/listFood.jsp").forward(request,response);
+        request.getRequestDispatcher(request.getContextPath()+"/listFood.jsp").forward(request,response);
 
     }
 

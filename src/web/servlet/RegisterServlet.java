@@ -26,7 +26,7 @@ public class RegisterServlet extends HttpServlet {
 
         UserDao dao = new UserDao();
         if(dao.register(RgUser)){
-            response.sendRedirect("/exp01/exp01/successRegister.html");
+            response.sendRedirect(request.getContextPath()+"/exp01/successRegister.html");
         }
 
     }

@@ -5,14 +5,39 @@
     <title>Title</title>
 </head>
 <body>
+
+<h1 align="center">欢迎来到食品超市！请登陆您的账号！</h1>
     <form action="/exp01/loginServlet" method="post">
-        用户名:<input type="text" name = "username"><br>
 
-        密码:<input type="password" name="password"><br>
+        <table align="center">
+        <tr>
+            <td>用户名:</td>
+            <td colspan="2"><input type="text" name = "username"></td>
+        </tr>
+        <tr>
+            <td>密码:</td>
+            <td colspan="2"><input type="password" name="password"></td>
+        </tr>
 
-        <input type="submit" value="登陆">
+
+         <tr align="center">
+             <td></td>
+             <td >
+                 <input type="submit" value="登陆">
+             </td>
+             <td>
+
+                 <a href="/exp01/exp01/register.html">
+                     <button type="button">注册</button>
+                 </a>
+
+             </td>
+         </tr>
+
+
+        </table>
 
     </form>
-    注册一个账号<a href="register.html">点击注册</a>
+
 </body>
 </html>

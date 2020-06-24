@@ -11,7 +11,7 @@ import java.io.IOException;
 public class LogoutServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getSession().invalidate();//销毁session
-        response.sendRedirect("/exp01/exp01/login.html");
+        response.sendRedirect(request.getContextPath()+"/exp01/login.html");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
