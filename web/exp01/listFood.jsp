@@ -35,6 +35,10 @@
 
         </c:forEach>
 
+        <tr>
+            <td align="center" colspan="5"><a href="/exp01/exp01/listCart.jsp">点击进入购物车进行结算</a></td>
+        </tr>
+
     </table>
 
 </body>

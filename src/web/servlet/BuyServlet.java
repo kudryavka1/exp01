@@ -23,7 +23,7 @@ public class BuyServlet extends HttpServlet {
 
         businessService.buyFood(id,cart);
 
-        request.getRequestDispatcher("/exp01/listCart.jsp").forward(request, response);
+        request.getRequestDispatcher("/exp01/listFood.jsp").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
