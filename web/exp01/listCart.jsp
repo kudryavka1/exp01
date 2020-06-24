@@ -16,7 +16,7 @@
 <c:if test="${empty(cart.foodMap)}">
     <div align="center">
         <h1>你还没购买任何水果</h1>
-        <a href="/exp01/FoodServlet">点击进入购买页面</a>
+        <a href="${pageContext.request.contextPath}/FoodServlet">点击进入购买页面</a>
     </div>
 </c:if>
 
@@ -43,7 +43,7 @@
         </tr>
     </c:forEach>
         <tr>
-            <td colspan="3"><a href="/exp01/FoodServlet">点击继续购买商品</a></td>
+            <td colspan="3"><a href="${pageContext.request.contextPath}/FoodServlet">点击继续购买商品</a></td>
             <td colspan="1">合计：</td>
             <td colspan="2">${cart.price}</td>
         </tr>

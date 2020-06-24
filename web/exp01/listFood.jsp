@@ -13,7 +13,7 @@
 
 </head>
 <body>
-<h3 align="center">单前用户：<%=session.getAttribute("username")%><a href="/exp01/LogoutServlet">注销</a></h3>
+<h3 align="center">单前用户：<%=session.getAttribute("username")%><a href="${pageContext.request.contextPath}/LogoutServlet">注销</a></h3>
     <table width="720px" border="1px" align="center">
         <tr>
             <td>食品编号</td>
@@ -36,7 +36,7 @@
         </c:forEach>
 
         <tr>
-            <td align="center" colspan="5"><a href="/exp01/exp01/listCart.jsp">点击进入购物车进行结算</a></td>
+            <td align="center" colspan="5"><a href="${pageContext.request.contextPath}/exp01/listCart.jsp">点击进入购物车进行结算</a></td>
         </tr>
 
     </table>
