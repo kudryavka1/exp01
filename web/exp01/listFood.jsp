@@ -13,8 +13,8 @@
 
 </head>
 <body>
-单前用户：<%=session.getAttribute("username")%><a href="/exp01/LogoutServlet">注销</a>
-    <table border="1px">
+<h3 align="center">单前用户：<%=session.getAttribute("username")%><a href="/exp01/LogoutServlet">注销</a><h3>
+    <table width="720px" border="1px" align="center">
         <tr>
             <td>食品编号</td>
             <td>食品名称</td>

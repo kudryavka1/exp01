@@ -14,13 +14,15 @@
 </head>
 <body>
 <c:if test="${empty(cart.foodMap)}">
-    <h1>你还没购买任何水果</h1>
-    <a href="/exp01/FoodServlet">点击进入购买页面</a>
+    <div align="center">
+        <h1>你还没购买任何水果</h1>
+        <a href="/exp01/FoodServlet">点击进入购买页面</a>
+    </div>
 </c:if>
 
 
 <c:if test="${!empty(cart.foodMap)}">
-    <table border="1px">
+    <table border="1px" width="720px" align="center">
         <tr>
             <td>食品编号</td>
             <td>食品名称</td>
