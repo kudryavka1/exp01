@@ -14,8 +14,8 @@
   <div align="center">
   Hello!
   欢迎您来到zh测试小项目<br>
-  点击进入Servlet<a href="/exp01/exp01/login.html">登陆页面</a>！<br>
-  点击进入jsp<a href="/exp01/lc23/login.html">登陆页面</a>!
+  点击进<a href="/exp01/exp01/login.html">登陆页面</a>！<br>
+
   </div>
   </body>
 </html>
